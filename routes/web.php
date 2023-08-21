@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/list', [AdsController::class, 'list']);
+Route::get('/item/{id}', [AdsController::class, 'item']);
+Route::get('/pages', [AdsController::class, 'paginateList']);

@@ -5,4 +5,4 @@ Laravel 项目快速开发骨架
 
 框架要求
 - Laravel >= 9
-- php >= 8.0
+- php >= 8.1
